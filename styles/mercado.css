@@ -19,14 +19,21 @@
     display: grid;
     grid-template-columns: repeat(2, 49.5%);
     column-gap: 1%;
+    row-gap: 10px;
 }
 
-.cards__jobs__item{
+.cards__jobs > div li:nth-child(2n + 1){
+    background-color: #0021FF;
+}
+
+.cards__jobs__item {
     display: flex;
     flex-direction: column;
+    margin-bottom: 10px;
+    
 }
 
-.content__view{
+.content__view {
     position: relative;
     width: 100%;
     background-color: #fff;
@@ -41,21 +48,23 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    
+
 }
-.job_desc h2 span{
+
+.job_desc h2 span {
     background-color: blue;
     border-radius: 5px;
     display: flex;
     display: inline-block;
 }
 
-.job_desc a{
-   display: flex;
-   align-items: center;
+.job_desc a {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
 }
 
-.job_desc a img{
+.job_desc a img {
     width: 20px;
     margin-right: 10px;
 }
@@ -71,11 +80,17 @@
     height: 100%;
 }
 
-.content__hidden{
-    margin: 0 auto;
+.content__hidden {
     height: 0;
     overflow: hidden;
     background-color: #fff;
-    margin-top: -20px;
-    top: 100%;
+    margin-top: -10px;
+    margin-bottom: 10px;
+    transition: height, .3s ease;
+}
+
+.show_content {
+    padding: 10px;
+    height: 200px;
+    transition: height, .3s ease;
 }
