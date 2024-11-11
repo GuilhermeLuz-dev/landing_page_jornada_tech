@@ -1,4 +1,6 @@
 .footer {
+    display: flex;
+    justify-content: center;
     background-color: #0021ff;
     border-radius: 45px 45px 0px 0px;
     color: #ffffff;
@@ -20,7 +22,6 @@
 
 .line {
     border-top: 1px solid #ffffff;
-    margin: 10px 0;
     position: absolute;
     bottom: 65px;
     width: 100%;
@@ -33,4 +34,14 @@
     transform: translateX(-50%);
     width: 250px;
     height: auto;
+}
+
+@media(max-width:767px) {
+    .footer-img {
+        width: 150px;
+    }
+
+    .line {
+        margin-bottom: 30px;
+    }
 }

@@ -1,4 +1,4 @@
-#faq{
+#faq {
     padding: 50px;
 }
 
@@ -72,4 +72,16 @@
 .faq__questions__item--is-open {
     height: 200px;
     transition: height, .3s ease;
+}
+
+@media(max-width:767px) {
+    .title_faq {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .title_faq h2 {
+        margin-bottom: 10px;
+    }
+
 }
