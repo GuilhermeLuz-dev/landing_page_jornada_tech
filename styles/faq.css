@@ -20,6 +20,7 @@
     padding: 10px 20px;
     border-radius: 20px;
     transition: all .3s ease;
+    cursor: pointer;
 
 }
 
@@ -42,12 +43,13 @@
     color: #0021FF;
 }
 
-.faq__questions__item__question_close::after {
+.faq__questions__item__question--open::after {
     content: "-";
     cursor: pointer;
 }
 
 .faq__questions__item__question h3 {
+
     display: flex;
     align-items: center;
 }
