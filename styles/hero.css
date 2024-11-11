@@ -1,16 +1,18 @@
 .hero__content {
-    margin-top: 135px;
+    margin-top: 50px;
+
 }
 
 .hero__content img {
     width: 420px;
-    display: block;
     margin: 0 auto;
     margin-bottom: 97px;
+    display: block;
 
 }
 
 .hero__info {
+    width: 100%;
     display: flex;
     justify-content: space-between;
 }
@@ -30,7 +32,7 @@
 
 .hero__info__img {
     max-width: 500px;
-    max-height: 500px;
+    max-height: auto;
 
 }
 
@@ -39,23 +41,32 @@
     height: 100%;
 }
 
-@media(max-width: 767px){
+@media(max-width: 767px) {
     .hero__content {
-        width: 90%;
-        
+        width: 100%;
+    }
+
+    .hero__content img {
+        width: 200px;
     }
 
     .hero__info {
         flex-direction: column;
-        justify-content: space-between;
+        align-items: center;
+    }
+
+    .hero__info__desc {
+        width: 90%;
+        text-align: center;
+
     }
 
     .hero__info__desc h1 {
-        font-size: 30px;
-    }
-    
-    .hero__info__desc p {
         font-size: 20px;
     }
-    
+
+    .hero__info__desc p {
+        font-size: 15px;
+    }
+
 }
