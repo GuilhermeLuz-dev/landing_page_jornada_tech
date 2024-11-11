@@ -2,17 +2,6 @@
     background-color: #12F1FF;
 }
 
-.title {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    margin: 80px 0;
-}
-
-.title h2 {
-    width: 500px;
-    margin-right: 40px;
-}
 
 .cards__jobs {
     width: 100%;
@@ -22,21 +11,40 @@
     row-gap: 10px;
 }
 
-.cards__jobs > div li:nth-child(2n + 1){
-    background-color: #0021FF;
-}
-
 .cards__jobs__item {
     display: flex;
     flex-direction: column;
     margin-bottom: 10px;
-    
+
+}
+
+.first__card {
+    background-color: #fff;
+    box-shadow: 0px 5px 0px 0px #191A23;
+}
+
+.first__card span {
+    background-color: #0021FF;
+    color: #fff;
+}
+
+.second__card {
+    background-color: #0021FF;
+    box-shadow: 0px 5px 0px 0px #191A23;
+
+}
+
+.second__card span {
+    background-color: #12F1FF;
+}
+
+.second__card a {
+    color: #fff;
 }
 
 .content__view {
     position: relative;
     width: 100%;
-    background-color: #fff;
     display: flex;
     justify-content: space-between;
     padding: 20px;
@@ -52,7 +60,6 @@
 }
 
 .job_desc h2 span {
-    background-color: blue;
     border-radius: 5px;
     display: flex;
     display: inline-block;
@@ -73,6 +80,7 @@
     padding: 20px 0;
     width: 100%;
     max-width: 150px;
+    max-height: 150px;
 }
 
 .job_img img {
@@ -90,7 +98,23 @@
 }
 
 .show_content {
-    padding: 10px;
-    height: 200px;
+    padding: 30px 10px;
+    height: 250px;
     transition: height, .3s ease;
+}
+
+@media(max-width:767px) {
+    .title {
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+        margin: 80px 0;
+    }
+    
+    .title h2 {
+        width: 500px;
+        margin-right: 40px;
+    }
+    
+
 }
