@@ -85,5 +85,8 @@
     .title_faq h2 {
         margin-bottom: 10px;
     }
+    .faq__questions__item--is-open {
+        height: 320px;
+    }
 
 }

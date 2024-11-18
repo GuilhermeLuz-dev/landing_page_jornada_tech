@@ -111,7 +111,7 @@
 
 .show_content {
     padding: 30px 10px;
-    height: 250px;
+    height: 300px;
     transition: height, .3s ease;
 }
 
